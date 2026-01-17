@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rif-offwhite text-rif-charcoal font-sans transition-colors duration-200;
+  }
+  /* Dark mode overrides for body */
+  @media (prefers-color-scheme: dark) {
+    body {
+      @apply bg-rif-charcoal text-rif-offwhite;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+}
