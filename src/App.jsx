@@ -9,7 +9,7 @@ import About from './pages/About';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="flex flex-col min-h-screen bg-rif-offwhite dark:bg-rif-charcoal text-rif-charcoal dark:text-rif-offwhite font-sans selection:bg-rif-blue selection:text-white transition-colors duration-200">
         <Navbar />
         <main className="flex-grow">
